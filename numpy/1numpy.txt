@@ -1,0 +1,11 @@
+#Álgebra lineal con Numpy
+
+¿Qué es NumPy?
+
+Imagina que estás trabajando en un proyecto de análisis de datos o de programación científica, y necesitas manejar y manipular grandes cantidades de información numérica de manera eficiente. Aquí es donde entra en juego NumPy, que es una biblioteca de Python diseñada específicamente para el *cálculo numérico*.
+
+NumPy, que significa "Numerical Python" (Python Numérico), proporciona una estructura de datos llamada "arreglo" (o "array" en inglés) que es similar a una lista o matriz, pero mucho más poderosa y eficiente. Los arreglos de NumPy son multidimensionales, lo que significa que pueden tener una o más dimensiones, como filas y columnas en una matriz.
+
+Ofrece muchas funciones y operaciones matemáticas que son extremadamente rápidas y optimizadas para trabajar con arreglos. Esto se debe a que NumPy está escrito en un lenguaje de programación llamado C, que es muy rápido en comparación con Python. Cuando realizas cálculos con NumPy, estos se ejecutan en el bajo nivel de C, lo que brinda un rendimiento mucho mejor que si lo hicieras solo con Python.
+
+Además de la eficiencia, NumPy también proporciona una amplia gama de funciones para realizar operaciones matemáticas en los arreglos.
