@@ -9,3 +9,32 @@ NumPy, que significa "Numerical Python" (Python Numérico), proporciona una estr
 Ofrece muchas funciones y operaciones matemáticas que son extremadamente rápidas y optimizadas para trabajar con arreglos. Esto se debe a que NumPy está escrito en un lenguaje de programación llamado C, que es muy rápido en comparación con Python. Cuando realizas cálculos con NumPy, estos se ejecutan en el bajo nivel de C, lo que brinda un rendimiento mucho mejor que si lo hicieras solo con Python.
 
 Además de la eficiencia, NumPy también proporciona una amplia gama de funciones para realizar operaciones matemáticas en los arreglos.
+
+---------------------------------------------------------------
+
+Con virtualenv, puede crear un entorno virtual para su proyecto y luego instalar NumPy y Pandas en ese entorno específico:
+
+# Crear un entorno virtual
+virtualenv myenv
+
+# Activar el entorno virtual
+source myenv/bin/activate  # En Linux/Mac
+myenv\Scripts\activate    # En Windows
+
+# Instalar NumPy y Pandas en el entorno virtual
+pip install numpy pandas
+
+----------------------------------------------------------------
+
+Con Anaconda:
+
+conda --version
+conda install numpy
+conda install pandas
+
+crear un nuevo entorno virtual:
+
+conda create --name mi_entorno
+conda activate mi_entorno
+conda install numpy pandas
+
