@@ -115,5 +115,106 @@ arr = np.array([1, 2, 3, 4, 5, 6])
 # Cambiar la forma del arreglo a una matriz de 2 filas y 3 columnas
 reshaped_arr = arr.reshape(2, 3)
 print(reshaped_arr)
-#salida: [[1 2 3] [4 5 6]]
+#salida: 
+# [[1 2 3] 
+# [4 5 6]]
 # hemos creado un arreglo unidimensional arr con 6 elementos. Luego utilizamos el método reshape() para cambiar su forma a una matriz de 2 filas y 3 columnas. El resultado es el arreglo reshaped_arr, que tiene la forma [[1 2 3]; [4 5 6]].
+#La modificación de la forma de un arreglo no altera los elementos en sí, simplemente los reorganiza en una nueva estructura. Es importante tener en cuenta que la cantidad total de elementos en el arreglo original debe ser igual a la cantidad total de elementos en la forma deseada.
+
+# Otro ejemplo con un arreglo bidimensional:
+
+# Crear un arreglo bidimensional de 3x4
+arr = np.array([[1, 2, 3, 4],
+                [5, 6, 7, 8],
+                [9, 10, 11, 12]])
+
+# Cambiar la forma del arreglo a una matriz de 2 filas y 6 columnas
+reshaped_arr = arr.reshape(2, 6)
+print(reshaped_arr)
+#salida: 
+# [[ 1  2  3  4  5  6] 
+# [ 7  8  9 10 11 12]]
+#En este caso, hemos creado un arreglo bidimensional arr de 3 filas y 4 columnas. Luego, utilizamos reshape() para cambiar su forma a una matriz de 2 filas y 6 columnas. El resultado es el arreglo reshaped_arr, que tiene la forma [[1 2 3 4 5 6]; [7 8 9 10 11 12]].
+
+#También es posible utilizar el valor -1 en una dimensión al utilizar reshape(), lo que indica que NumPy debe inferir automáticamente el tamaño adecuado en esa dimensión. Veamos un ejemplo:
+
+# Crear un arreglo unidimensional de 12 elementos
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+
+# Cambiar la forma del arreglo a una matriz de 3 filas y tamaño de columna automático
+reshaped_arr = arr.reshape(3, -1)
+print(reshaped_arr)
+#salida: 
+# [[ 1  2  3  4]
+# [ 5  6  7  8]
+# [ 9 10 11 12]]
+#En este ejemplo, hemos utilizado reshape() para cambiar la forma del arreglo arr a una matriz de 3 filas y un tamaño de columna automático. NumPy infiere que el tamaño de columna adecuado es 4, lo que resulta en el arreglo reshaped_arr mostrado arriba.
+
+#-----------------------------------------------------------------------------------------------------------------------
+
+#COMBINACIONES DE ARRAYS: NumPy ofrece varias funciones para combinar múltiples arreglos en uno solo. Algunas de las funciones comunes son concatenate(), vstack() y hstack().
+
+import numpy as np
+
+# Crear dos arreglos
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([4, 5, 6])
+
+# Unir los arreglos utilizando concatenate()
+result = np.concatenate((arr1, arr2))
+print(result)
+#salida: [1 2 3 4 5 6], utilizamos la función concatenate() para unir los arreglos arr1 y arr2 en uno solo. El resultado es un nuevo arreglo [1 2 3 4 5 6].
+
+#También puedes utilizar vstack() para unir arreglos verticalmente (a lo largo del eje 0) o hstack() para unir arreglos horizontalmente (a lo largo del eje 1). Veamos un ejemplo de cada uno:
+
+# Unir arreglos verticalmente utilizando vstack()
+result = np.vstack((arr1, arr2))
+print(result)
+#salida: 
+# [[1 2 3]
+# [4 5 6]]
+
+# Unir arreglos horizontalmente utilizando hstack()
+result = np.hstack((arr1, arr2))
+print(result)
+#salida: [1 2 3 4 5 6]
+
+#--------------------------------------------------------------------------------------------------------------------
+
+#DIVISIÓN DE ARRAYS: NumPy también ofrece funciones para dividir un arreglo en múltiples arreglos más pequeños. Algunas de las funciones comunes son split(), vsplit() y hsplit().
+
+# Crear un arreglo
+arr = np.array([1, 2, 3, 4, 5, 6])
+
+# Dividir el arreglo en tres partes utilizando split()
+result = np.split(arr, 3)
+print(result)
+#SALIDA: [array([1, 2]), array([3, 4]), array([5, 6])], utilizamos la función split() para dividir el arreglo arr en tres partes. El resultado es una lista con tres arreglos más pequeños array([1, 2]), array([3, 4]) y array([5, 6]).
+
+#utilizar vsplit() para dividir un arreglo verticalmente o hsplit() para dividir un arreglo horizontalmente. Veamos un ejemplo de cada uno:
+
+# Dividir el arreglo verticalmente utilizando vsplit()
+arr = np.array([[1, 2, 3],
+                [4, 5, 6]])
+
+result = np.vsplit(arr, 2)
+print(result)
+#salida: [array([[1, 2, 3]]), array([[4, 5, 6]])]
+
+# Dividir el arreglo horizontalmente utilizando hsplit()
+arr = np.array([[1, 2, 3],
+                [4, 5, 6]])
+
+result = np.hsplit(arr, 3)
+
+print(result)
+#salida: 
+""" [array([[1],
+    [4]]),
+array([[2],
+       [5]]),
+array([[3],
+       [6]])] """
+
+
+
