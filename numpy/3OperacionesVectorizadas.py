@@ -35,3 +35,38 @@ compute_reciprocals(values)
 #Compara los resultados de los siguientes ejemplos:
 print(compute_reciprocals(values))
 print(1.0 / values)
+""" 
+[ 0.16666667  1.          0.25        0.25        0.125     ]
+[ 0.16666667  1.          0.25        0.25        0.125     ]
+ """
+#Al calcular el tiempo de ejecución para nuestro arreglo grande, vemos que se completa órdenes de magnitud más rápido que el bucle de Python:
+#%timeit (1.0 / big_array)
+# 100 loops, best of 3: 4.6 ms per loop
+
+#----------------------------------------------------------------
+
+#Operaciones aritméticas: NumPy sobrecarga los operadores aritméticos en Python para permitir realizar operaciones aritméticas vectorialmente
+x = np.arange(4)
+print("x     =", x)
+print("x + 5 =", x + 5)
+print("x - 5 =", x - 5)
+print("x * 2 =", x * 2)
+print("x / 2 =", x / 2)
+print("x // 2 =", x // 2) 
+print("-x     = ", -x)
+print("x ** 2 = ", x ** 2)
+print("x % 2  = ", x % 2)
+
+"""
+ x     = [0 1 2 3]
+x + 5 = [5 6 7 8]
+x - 5 = [-5 -4 -3 -2]
+x * 2 = [0 2 4 6]
+x / 2 = [ 0.   0.5  1.   1.5]
+x // 2 = [0 0 1 1]
+-x     =  [ 0 -1 -2 -3]
+x ** 2 =  [0 1 4 9]
+x % 2  =  [0 1 0 1]
+
+Aparte de estas operaciones también están implementadas funciones trigonométricas, valor absoluto, exponenciales, logaritmos y más.
+ """
