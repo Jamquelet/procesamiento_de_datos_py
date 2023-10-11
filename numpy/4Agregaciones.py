@@ -36,7 +36,7 @@ min(big_array), max(big_array)
 #Las funciones correspondientes de NumPy tienen una sintaxis similar y, nuevamente, se ejecutan mucho más rápido:
 np.min(big_array), np.max(big_array) #(1.1717128136634614e-06, 0.9999976784968716)
 """
- %timeit min(big_array)
+%timeit min(big_array)
 %timeit np.min(big_array)
 
 10 loops, best of 3: 82.3 ms per loop
@@ -46,4 +46,30 @@ np.min(big_array), np.max(big_array) #(1.1717128136634614e-06, 0.999997678496871
 print(big_array.min(), big_array.max(), big_array.sum())
 #1.17171281366e-06 0.999997678497 499911.628197
 
+#------------------------------------------------------------------------------------------------------------------
+
+#Agregaciones multidimensionales: Un tipo común de operación de agregación es un agregado a lo largo de una fila o columna.
+
+#Digamos que tienes algunos datos almacenados en un arreglo bidimensional:
+
+M = np.random.random((3, 4))
+print(M)
+""" 
+[[ 0.8967576   0.03783739  0.75952519  0.06682827]
+ [ 0.8354065   0.99196818  0.19544769  0.43447084]
+ [ 0.66859307  0.15038721  0.37911423  0.6687194 ]]
+ """
+#Por defecto, cada función de agregación de NumPy devolverá el agregado sobre todo el arreglo:
+M.sum() #6.0850555667307118
+
+#Las funciones de agregación toman un argumento adicional que especifica el eje a lo largo del cual se calcula el agregado. Por ejemplo, podemos encontrar el valor mínimo dentro de cada columna especificando axis=0:
+M.min(axis=0)#array([ 0.66859307,  0.03783739,  0.19544769,  0.06682827])
+
+#La función devuelve cuatro valores, correspondientes a las cuatro columnas de números.
+
+#De manera similar, podemos encontrar el valor máximo dentro de cada fila:
+M.max(axis=1)
+#array([ 0.8967576 ,  0.99196818,  0.6687194 ])
+
+#La palabra clave axis especifica la dimensión del arreglo que se colapsará, en lugar de la dimensión que se devolverá. Por lo tanto, especificar axis=0 significa que se colapsará el primer eje: para arreglos bidimensionales, esto significa que se agregarán los valores dentro de cada columna.
 
