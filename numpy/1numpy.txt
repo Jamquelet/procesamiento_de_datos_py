@@ -38,3 +38,49 @@ conda create --name mi_entorno
 conda activate mi_entorno
 conda install numpy pandas
 
+----------------------------------------------------------------
+
+¿Cuál es la diferencia entre una lista de Python y un arreglo de NumPy?
+
+La principal diferencia entre una lista de Python y un arreglo de NumPy radica en su naturaleza y su funcionalidad:
+
+Listas de Python:
+
+Son una estructura de datos básica en Python que puede contener elementos de diferentes tipos.
+Las operaciones en listas son limitadas y su rendimiento no es óptimo para cálculos numéricos intensivos.
+No proporcionan funciones específicas para realizar operaciones matemáticas y científicas.
+Arreglos de NumPy:
+
+Son una estructura de datos optimizada para cálculos numéricos y científicos en Python.
+Todos los elementos de un arreglo de NumPy son del mismo tipo de datos, lo que permite realizar operaciones de manera eficiente.
+Proporcionan una amplia gama de funciones y operaciones matemáticas para el procesamiento de datos numéricos, lo que los hace ideales para aplicaciones científicas y de análisis de datos.
+En resumen, NumPy es una biblioteca especializada en arreglos numéricos que ofrece un rendimiento y una funcionalidad significativamente mejores que las listas de Python para cálculos y análisis numéricos. Por lo tanto, si trabajas con datos numéricos, es recomendable utilizar arreglos de NumPy en lugar de listas de Python.
+
+----------------------------------------------------------------
+
+Quiz 
+
+1. ¿Qué es NumPy? 
+# Una biblioteca de Python para operaciones numéricas y científicas.
+
+2. ¿Cuál es la función principal de NumPy? 
+# Manipular y operar con arreglos multidimensionales. 
+
+3. ¿Cómo se crea un arreglo unidimensional en NumPy?
+# Utilizando la función array () 
+
+4. ¿Cuál es la diferencia entre una lista de Python y un arreglo de NumPy?
+# Las listas pueden contener elementos de diferentes tipos, mientras que los arreglos de NumPy son homogéneos
+#En el contexto de estructuras de datos, como listas o arreglos, "homogéneo" se refiere a que todos los elementos contenidos en esa estructura son del mismo tipo de datos. Esto significa que los elementos son consistentes en términos de su tipo y representación.
+
+5. ¿Cuál es la ventaja de utilizar operaciones vectorizadas en NumPy en lugar de bucles de Python?
+#Las operaciones vectorizadas son más eficientes en términos de rendimiento
+
+6. ¿Qué es el broadcasting en NumPy?
+# La replicación automática de valores para que los arreglos tengan formas compatibles
+
+7. ¿Cuál es la función de np.sum() en NumPy?
+# Calcular la suma de todos los elementos de un arreglo
+
+8. ¿Cuál es la forma recomendada de importar NumPy en un programa de Python?
+# import numpy as np
