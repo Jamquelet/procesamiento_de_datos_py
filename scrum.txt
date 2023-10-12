@@ -1,0 +1,23 @@
+""" Metodología scrum
+
+Scrum es una metodología ágil de gestión de proyectos que se utiliza comúnmente en el desarrollo de software y en otros campos para gestionar proyectos complejos. Aquí tienes una breve descripción de la metodología Scrum:
+
+Equipos Multifuncionales: Scrum se basa en equipos autoorganizados y multifuncionales. Esto significa que el equipo incluye a todos los roles necesarios para completar el trabajo, como desarrolladores, testers y diseñadores.
+
+Sprints: Los proyectos Scrum se dividen en iteraciones llamadas "sprints". Cada sprint tiene una duración fija y generalmente varía de 2 a 4 semanas. Durante un sprint, el equipo se enfoca en entregar un conjunto específico de funcionalidades o características.
+
+Backlog de Producto: El trabajo pendiente se registra en un "backlog de producto", que es una lista priorizada de todas las tareas, características o elementos que deben desarrollarse en el proyecto. Los elementos más importantes y de alto valor se encuentran en la parte superior.
+
+Reuniones Diarias: Se llevan a cabo reuniones diarias cortas llamadas "reuniones diarias de scrum" o "stand-ups". En estas reuniones, los miembros del equipo comparten el progreso, los obstáculos y las próximas tareas.
+
+Revisión de Sprint: Al final de cada sprint, se lleva a cabo una "revisión de sprint" donde se muestra el trabajo completado al cliente o al interesado. Esto permite obtener retroalimentación temprana y ajustar los objetivos del siguiente sprint si es necesario.
+
+Retrospectiva de Sprint: Después de la revisión de sprint, se realiza una "retrospectiva de sprint" en la que el equipo reflexiona sobre su rendimiento y busca mejoras para el próximo sprint.
+
+Roles Clave: Scrum define roles clave, que incluyen al Scrum Master (responsable de facilitar el proceso), el Product Owner (responsable de gestionar el backlog de producto) y el equipo de desarrollo.
+
+Transparencia: Scrum promueve la transparencia en el proceso y la comunicación abierta. Todos los aspectos del proyecto, incluidos los avances y los obstáculos, deben ser visibles para el equipo.
+
+Adaptabilidad: Scrum es ágil y adaptable. Permite cambios en los requisitos y prioridades a medida que se obtiene nueva información o se ajustan las necesidades del proyecto.
+
+Scrum se enfoca en la entrega temprana y continua de valor al cliente, la colaboración efectiva del equipo y la adaptación a medida que se avanza en el proyecto. Es una metodología ampliamente adoptada en el desarrollo de software y ha demostrado ser efectiva en proyectos donde los requisitos pueden cambiar o evolucionar con el tiempo. """
