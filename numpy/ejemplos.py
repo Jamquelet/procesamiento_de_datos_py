@@ -23,6 +23,14 @@ print("Precio promedio:", promedio_precio) #4.365
 print("Cantidad máxima vendida:", max_cantidad)# 12.0
 print("Precio mínimo unitario:", min_precio)#2.99
 
+#cantidad total de productos vendidos
+total_Ventas= ventas[:,1].sum(); print(total_Ventas)
+#promedio del precio unitario
+ventas[:,2].mean()
+#cantidad máxima vendida
+ventas[:,1].max()
+#cantidad minima
+ventas[:,1].min()
 #----------------------------------------------------------------
 
 #ejemplo 2
