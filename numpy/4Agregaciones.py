@@ -1,6 +1,27 @@
 #Agregaciones
 #NumPy tiene varias funciones de agregación incorporadas para trabajar con arreglos
 
+""" 
+---> Media (Promedio)= medida que se utiliza para representar el valor típico o central de un conjunto de datos
+Media = (Suma de todos los valores) / (Cantidad de valores)
+La media proporciona una idea de la tendencia central de los datos y es útil para resumir datos numéricos, puede verse afectada por valores extremos (valores atípicos) en el conjunto de datos.
+
+---> Desviación Estándar: es una medida de dispersión que indica cuánto se alejan los valores individuales de la media en un conjunto de datos, mide la variabilidad o la propagación de los datos.Una desviación estándar más pequeña indica que los valores tienden a estar cerca de la media, mientras que una desviación estándar más grande indica que los valores están más dispersos.
+ """
+""" import numpy as np
+
+# Supongamos que tienes un arreglo de datos
+datos = np.array([1, 2, 3, 4, 5])
+
+# Calcular la media 
+media = np.mean(datos)
+
+# Calcular la desviación estándar
+desviacion_estandar = np.std(datos)
+
+print("Media:", media)
+print("Desviación estándar:", desviacion_estandar) """
+
 #Suma de los valores en un arreglo: 
 #consideremos calcular la suma de todos los valores en un arreglo. Python en sí mismo puede hacer esto utilizando la función sum incorporada:
 
