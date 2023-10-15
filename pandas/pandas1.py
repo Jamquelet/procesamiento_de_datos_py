@@ -20,7 +20,7 @@ María,30,Barcelona
 Pedro,27,Sevilla
  """
 #Podemos leer este archivo de la siguiente forma
-import pandas as pd
+#import pandas as pd
 
 # Leer el archivo CSV en un DataFrame
 df = pd.read_csv("datos.csv")
