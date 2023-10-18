@@ -39,5 +39,35 @@ print(data.dtypes)
 # Verifica el nuevo índice
 print(data)
 
+#------------------------------------------------------------------------
+
+#pytest
+
+import pandas as pd
+
+def ej_1_cargar_csv() -> pd.DataFrame:
+    df = pd.read_csv("datos.csv")
+    return df
+
+def ej_2_convertir_fecha(df: pd.DataFrame) -> None:
+    df['Fecha'] = pd.to_datetime(df['Fecha'])
+
+def ej_3_convertir_cantidad(df: pd.DataFrame) -> None:
+    df['Cantidad'] = df['Cantidad'].astype(int)
+
+def ej_4_fecha_como_indice(df: pd.DataFrame) -> None:
+    df['Fecha'] = pd.to_datetime(df['Fecha'])
+    df.set_index('Fecha', inplace=True)
+
+def ej_5_filtrar_por_fecha(df: pd.DataFrame) -> pd.DataFrame:
+    df = df[df.index >= '2023-01-04']
+    df.to_csv("resultado_1.csv")
+    return df
+
+def ej_6_filtrar_por_producto(df: pd.DataFrame) -> pd.DataFrame:
+    df = df[df['Producto'] == 'Producto A']
+    df.to_csv("resultado_2.csv")
+    return df
+
 
 
