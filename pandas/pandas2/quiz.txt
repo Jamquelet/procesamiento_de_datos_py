@@ -1,0 +1,22 @@
+1.¿Cuál es la función en pandas que se utiliza para aplicar una operación a una columna completa de un DataFrame? #apply()
+
+2.¿Cuál es el método en pandas que se utiliza para filtrar filas en función de múltiples condiciones?
+#query()
+
+3.¿Cuál es el método en pandas que se utiliza para reemplazar los valores faltantes en un DataFrame?
+#fillna()
+
+4.¿Cuál es la función en pandas que se utiliza para eliminar los registros duplicados en un DataFrame?
+#drop_duplicates()
+
+5.¿Cuál es el método en pandas que se utiliza para realizar consultas SQL-like en un DataFrame?
+#query()
+
+6.¿Cuál es la función en pandas que se utiliza para combinar dos DataFrames en función de una columna común?
+#merge()
+
+7.¿Cuál es la función en pandas que se utiliza para calcular estadísticas descriptivas de un DataFrame, como promedio, mediana y desviación estándar?
+#describe()
+
+8.¿Cuál de las siguientes opciones no es una herramienta de procesamiento de datos distribuidos?
+#numpy

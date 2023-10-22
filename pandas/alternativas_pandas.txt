@@ -1,0 +1,16 @@
+Alternativas
+Existen dos principales alternativas a Pandas en python
+
+1.Dask:
+
+Dask es una biblioteca de computación paralela y distribuida diseñada para trabajar con conjuntos de datos grandes que no caben en la memoria de una sola máquina.
+Proporciona estructuras de datos flexibles y familiares, como DataFrames y Arrays, que se asemejan a los de pandas y NumPy, pero con capacidad de escalado.
+Dask divide los cálculos en tareas más pequeñas y los distribuye en clústeres de computación para su ejecución paralela.
+Es ideal para realizar operaciones de análisis de datos y cálculos complejos en entornos de Big Data, donde se requiere escalabilidad y paralelismo.
+
+2.PySpark (Apache Spark):
+
+PySpark es la API de Python para Apache Spark, un motor de procesamiento de datos distribuido y de alto rendimiento.
+Spark está diseñado para manejar grandes volúmenes de datos y realizar cálculos distribuidos en clústeres de máquinas.
+PySpark proporciona una interfaz de programación en Python que permite realizar operaciones en paralelo en conjuntos de datos distribuidos utilizando el concepto de Resilient Distributed Datasets (RDD).
+Spark ofrece una amplia gama de herramientas y módulos integrados, como SQL, Streaming, Machine Learning y GraphX, lo que lo convierte en un ecosistema completo para el procesamiento de datos a gran escala.
