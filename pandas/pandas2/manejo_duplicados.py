@@ -8,7 +8,7 @@ import pandas as pd
 data = {
     'Nombre': ['Ana', 'Juan', 'Pedro', 'Ana', 'María'],
     'Edad': [25, 30, 35, 25, 28],
-    'Ciudad': ['Madrid', 'Barcelona', 'Madrid', 'Valencia', 'Barcelona']
+    'Ciudad': ['Madrid', 'Barcelona', 'Valencia', 'Madrid', 'Barcelona']
 }
 
 df = pd.DataFrame(data)
@@ -50,7 +50,6 @@ Nombre  Edad     Ciudad
 0    Ana    25     Madrid
 1   Juan    30  Barcelona
 2  Pedro    35     Madrid
-3    Ana    25   Valencia
 4  María    28  Barcelona """
 
 #----------------------------------------------------------------
