@@ -1,0 +1,16 @@
+id,id_persona,nombre_producto,precio
+1,1,Camisa,25.99
+2,2,Pantalon,45.50
+3,3,Zapatos,89.99
+4,1,Gorra,12.00
+5,4,Vestido,65.75
+6,3,Bufanda,18.50
+7,5,Bolso,55.00
+8,2,Reloj,120.25
+9,4,Blusa,32.99
+10,1,Calcetines,6.99
+11,3,Gafas,45.50
+12,5,Chaqueta,79.99
+13,2,Corbata,22.50
+14,4,Falda,28.75
+15,1,Boligrado,2.50

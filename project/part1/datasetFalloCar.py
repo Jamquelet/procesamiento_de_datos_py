@@ -11,3 +11,20 @@ print(age_list)
 
 age_avg = np.mean(age_list) 
 print(age_avg)
+
+""" 
+
+# Suponiendo que ya tienes cargados los datos en 'data'
+
+# Obtén la lista de edades
+edades = data["age"]
+
+# Convierte la lista de edades en un arreglo de NumPy
+edades_np = np.array(edades)
+
+# Calcula el promedio de edades
+promedio_edades = np.mean(edades_np)
+
+# Imprime el resultado
+print("El promedio de edad de las personas participantes en el estudio es:", promedio_edades)
+ """
