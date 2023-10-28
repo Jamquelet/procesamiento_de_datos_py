@@ -1,0 +1,17 @@
+Métodos HTTP
+
+Los verbos HTTP, también conocidos como métodos HTTP, son acciones que se utilizan en las solicitudes para indicar la operación que se desea realizar sobre un recurso en un servidor web. Cada verbo HTTP tiene un propósito específico y define la naturaleza de la operación que se va a realizar.
+
+1.GET: El verbo GET se utiliza para recuperar o solicitar datos de un recurso específico en un servidor. Es la operación más común y se utiliza cuando se quiere obtener información sin realizar cambios en el servidor. Por ejemplo, si realizas una solicitud GET a la URL de una página web, obtendrás el contenido de esa página.
+
+2.POST: El verbo POST se utiliza para enviar datos al servidor y crear un nuevo recurso. Se utiliza principalmente para enviar formularios o enviar datos para ser procesados por el servidor. Por ejemplo, cuando completas un formulario de registro en un sitio web y envías los datos, se utiliza una solicitud POST para enviar esa información al servidor y crear una nueva cuenta de usuario.
+
+3.PUT: El verbo PUT se utiliza para actualizar o reemplazar un recurso existente en el servidor. Se envía una solicitud PUT con los datos actualizados y el servidor los utiliza para actualizar el recurso correspondiente. Por ejemplo, si deseas actualizar la información de un usuario existente en una base de datos, puedes utilizar una solicitud PUT para enviar los nuevos datos al servidor.
+
+4.PATCH: El verbo PATCH se utiliza para realizar modificaciones parciales en un recurso existente en el servidor. A diferencia del verbo PUT, que reemplaza completamente un recurso, PATCH permite enviar solo las modificaciones necesarias. Es útil cuando solo se requiere actualizar una parte específica del recurso. Al enviar una solicitud PATCH, se envían los cambios que se desean realizar en el recurso identificado. El servidor procesará la solicitud y aplicará las modificaciones correspondientes. Es importante tener en cuenta que la implementación de PATCH puede variar según el servidor y la API.
+
+5.DELETE: Como su nombre indica, el verbo DELETE se utiliza para eliminar un recurso en el servidor. Al enviar una solicitud DELETE a una URL específica, el recurso correspondiente se eliminará del servidor. Por ejemplo, si deseas eliminar un archivo de tu almacenamiento en la nube, puedes utilizar una solicitud DELETE para eliminarlo.
+
+6.HEAD: El verbo HEAD se utiliza para solicitar información sobre un recurso sin recibir su contenido completo. Al enviar una solicitud HEAD, el servidor responderá con los encabezados de respuesta, pero no enviará el cuerpo de la respuesta. Esto es útil cuando solo se necesita obtener metadatos del recurso, como los encabezados de respuesta, para verificar su existencia o estado sin transferir los datos completos. Por ejemplo, puedes utilizar HEAD para verificar si un archivo existe en un servidor sin descargarlo por completo.
+
+7.OPTIONS: El verbo OPTIONS se utiliza para obtener información sobre las opciones y capacidades disponibles en un servidor. Al enviar una solicitud OPTIONS a una URL, el servidor responderá con una lista de los métodos HTTP permitidos (GET, POST, PUT, etc.), encabezados admitidos y otros detalles relevantes sobre la configuración del servidor. Esto es útil para determinar las opciones y restricciones de una API o recurso específico antes de enviar solicitudes.

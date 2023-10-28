@@ -1,0 +1,69 @@
+Qué son las APIs
+
+Una API es un conjunto de reglas y protocolos que permiten que diferentes aplicaciones se comuniquen entre sí. Es una interfaz que define cómo los diferentes componentes de software deben interactuar.
+
+API significa Application Programming Interface, que en español se traduce como Interfaz de Programación de Aplicaciones.
+
+Imagina una API como un intermediario que permite que dos aplicaciones se conecten y compartan información de manera segura. Una aplicación puede solicitar datos o funcionalidades de otra aplicación a través de la API, y la API proporcionará los datos o realizará la acción correspondiente.
+
+Las APIs se utilizan ampliamente en el desarrollo de software para facilitar la integración entre diferentes sistemas y aplicaciones. Permiten a los desarrolladores acceder y utilizar funciones o datos de servicios externos sin tener que preocuparse por los detalles internos de implementación de esos servicios.
+
+Por ejemplo, si estás desarrollando una aplicación móvil y quieres mostrar el pronóstico del tiempo en tiempo real, no es necesario que escribas todo el código necesario para recopilar esos datos y calcular el pronóstico tú mismo. En su lugar, puedes utilizar una API de pronóstico del tiempo que proporciona un proveedor de servicios meteorológicos. A través de la API, puedes enviar una solicitud para obtener los datos del pronóstico del tiempo y recibir una respuesta con esos datos, que luego puedes mostrar en tu aplicación.
+
+Las APIs pueden ser públicas o privadas. Una API pública es accesible para cualquier desarrollador que desee utilizarla, mientras que una API privada está limitada a ciertos usuarios o desarrolladores específicos mediante métodos de autenticación.
+
+--------------------------------------------------------------
+
+REST
+
+REST, que significa Representational State Transfer (Transferencia de Estado Representacional), es un estilo arquitectónico utilizado en el diseño de sistemas distribuidos, especialmente en el desarrollo de servicios web. Es un conjunto de principios y restricciones que define cómo deben ser diseñadas las interfaces de las aplicaciones web para que sean eficientes, escalables y fáciles de entender.
+
+El enfoque REST se basa en la idea de que los componentes de un sistema deben ser tratados como recursos y accedidos a través de una interfaz uniforme. Estos recursos pueden ser cualquier cosa que se pueda identificar y manipular, como datos, imágenes, servicios, etc.
+
+Algunas características importantes de REST son:
+
+1.Protocolo basado en HTTP: REST utiliza los métodos estándar de HTTP o HTTP Verbs.
+
+2.Sin estado: REST es sin estado (stateless), lo que significa que cada solicitud HTTP contiene toda la información necesaria para comprender y procesar la solicitud. No se mantiene ningún estado de sesión en el servidor entre solicitudes, lo que permite una mayor escalabilidad y flexibilidad en el diseño de sistemas distribuidos.
+
+3.Orientado a recursos: los recursos son la parte central de REST. Cada recurso tiene una identificación única (URI) y se accede a través de esa URI. Por ejemplo, si tienes una aplicación de redes sociales, los usuarios, las publicaciones y los comentarios podrían ser recursos accesibles a través de URIs como /users, /posts y /comments.
+
+4.Operaciones uniformes: REST utiliza un conjunto de operaciones uniformes que se aplican a los recursos. Estas operaciones son GET (obtener un recurso), POST (crear un recurso), PUT (actualizar un recurso) y DELETE (eliminar un recurso). Al seguir esta uniformidad, las API REST se vuelven predecibles y fáciles de entender.
+
+5.Formato de intercambio de datos: REST permite el intercambio de datos en diferentes formatos, como JSON (JavaScript Object Notation) o XML (eXtensible Markup Language). JSON es el formato más comúnmente utilizado debido a su simplicidad y legibilidad.
+
+-----------------------------------------------------
+
+6.REST APIs en el análisis de datos
+
+En el contexto del análisis de datos, las REST APIs permiten:
+
+1.Acceso a datos: Las REST APIs proporcionan un mecanismo para acceder a conjuntos de datos en aplicaciones y sistemas externos. Esto es crucial en el análisis de datos, ya que permite obtener información de diferentes fuentes y combinarla para obtener una visión más completa y enriquecedora. Por ejemplo, mediante una API REST, puedes extraer datos de una base de datos, un servicio en la nube o una plataforma de redes sociales para utilizarlos en tus análisis.
+
+2.Integración de sistemas: En el análisis de datos, a menudo se requiere la integración de múltiples sistemas y fuentes de datos. Las REST APIs facilitan esta integración al proporcionar una interfaz estándar y uniforme para la comunicación entre diferentes aplicaciones y servicios.
+
+3.Automatización de tareas: Mediante el uso de REST APIs, es posible automatizar tareas, ya que puedes programar solicitudes periódicas a las APIs para obtener datos actualizados automáticamente, lo que ahorra tiempo y garantiza que siempre estés trabajando con la información más reciente.
+
+4.Flexibilidad en la elección de herramientas: Al utilizar REST APIs, no estás limitado a utilizar una única herramienta o plataforma para el análisis de datos. Puedes seleccionar las mejores herramientas y tecnologías para cada etapa del análisis, y utilizar las APIs para conectarlas y transferir datos de manera eficiente.
+
+------------------------------------------------------------------  
+
+Quiz
+
+1. ¿Qué significa API?
+Application Programming Interface
+
+2.¿Cuál de los siguientes verbos HTTP se utiliza para recuperar datos de un recurso en un servidor?
+GET
+
+3.¿Cuál de los siguientes verbos HTTP se utiliza para crear un nuevo recurso en un servidor?
+POST
+
+4.¿Qué biblioteca de Python se utiliza comúnmente para consumir APIs?
+requests
+
+5.¿Cómo se puede autenticar en una API utilizando la biblioteca requests de Python?
+Incluyendo las credenciales de autenticación en el encabezado de la solicitud.
+
+6.¿Cuál de los siguientes verbos HTTP se utiliza para eliminar un recurso en un servidor?
+DELETE
