@@ -1,0 +1,47 @@
+1.Gráfico de Barras (Bar Chart):
+Uso: Ideal para comparar categorías o valores en distintos grupos.
+Ejemplo: Comparar ventas por producto en diferentes meses.
+
+2.Gráfico de Columnas (Column Chart):
+Uso: Similar al gráfico de barras, pero las categorías se muestran en el eje horizontal.
+Ejemplo: Comparar ingresos por departamento en una empresa.
+
+3.Gráfico de Línea (Line Chart):
+Uso: Seguir tendencias a lo largo del tiempo o en secuencia.
+Ejemplo: Representar la evolución de los precios de las acciones a lo largo de un año.
+
+4.Gráfico de Pastel (Pie Chart):
+Uso: Mostrar la proporción de partes de un todo (porcentaje).
+Ejemplo: Mostrar la distribución de gastos mensuales en un presupuesto.
+
+5.Histograma (Histogram):
+Uso: Representar la distribución de una variable numérica en intervalos (bins).
+Ejemplo: Visualizar la distribución de calificaciones en un examen.
+
+6.Gráfico de Puntos (Scatter Plot):
+Uso: Mostrar relaciones entre dos variables numéricas.
+Ejemplo: Representar la relación entre la edad de los empleados y su salario.
+
+7.Diagrama de Caja (Box Plot):
+Uso: Visualizar la distribución, mediana y valores atípicos de una variable numérica.
+Ejemplo: Analizar la distribución de precios de casas en un vecindario.
+
+8.Gráfico de Burbujas (Bubble Chart):
+Uso: Representar tres variables en un gráfico (x, y y tamaño de la burbuja).
+Ejemplo: Mostrar ingresos, gastos y ganancias de diferentes empresas.
+
+9.Gráfico de Radar (Radar Chart o Spider Chart):
+Uso: Comparar múltiples categorías en múltiplas variables.
+Ejemplo: Evaluar las habilidades de un atleta en diferentes disciplinas.
+
+10.Gráfico de Gantt (Gantt Chart):
+Uso: Representar cronogramas y tareas en proyectos.
+Ejemplo: Planificar las actividades en un proyecto de construcción.
+
+11.Mapas de Calor (Heat Maps):
+Uso: Mostrar la relación y variación de datos en una matriz bidimensional.
+Ejemplo: Visualizar las tasas de clics en una página web para diferentes horas y días de la semana.
+
+12.Gráfico Sankey (Sankey Diagram):
+Uso: Representar flujos de información o recursos entre diferentes categorías.
+Ejemplo: Mostrar la distribución de recursos de energía en un país.
