@@ -1,0 +1,123 @@
+Limpieza de datos
+
+La limpieza de datos es un proceso fundamental en el análisis de datos que tiene como objetivo detectar, corregir y eliminar errores, inconsistencias y datos irrelevantes o duplicados en un conjunto de datos. Consiste en identificar y solucionar problemas como valores faltantes, valores atípicos, formatos incorrectos, datos inconsistentes o incompatibles, entre otros.
+
+La limpieza de datos es crucial porque los conjuntos de datos suelen contener imperfecciones y errores que pueden afectar la precisión y confiabilidad de los análisis posteriores. Si no se realiza una limpieza adecuada, los resultados obtenidos pueden ser inexactos, sesgados o poco confiables.
+
+----------------------------------------------------------------
+
+Técnicas y estrategias para la limpieza de datos
+
+1.Eliminación de valores duplicados: Esta técnica implica identificar y eliminar registros duplicados en un conjunto de datos. Se comparan las filas o columnas en busca de valores idénticos y se conserva solo una instancia de cada valor duplicado.
+
+
+2.Tratamiento de valores faltantes: Los valores faltantes pueden ser problemáticos en un conjunto de datos y es importante abordarlos de manera adecuada. Algunas estrategias comunes incluyen:
+
+*Eliminación de registros: Si los registros con valores faltantes son pocos en comparación con el tamaño del conjunto de datos y no afectan significativamente los análisis, se pueden eliminar por completo.
+
+*Imputación de valores: Esta técnica implica estimar o calcular valores para reemplazar los valores faltantes. La imputación se puede hacer utilizando medidas estadísticas como la media, mediana o moda de los datos existentes. También se pueden utilizar técnicas más avanzadas, como la imputación basada en algoritmos de aprendizaje automático.
+
+*Marcadores especiales: En lugar de reemplazar los valores faltantes, se pueden usar marcadores especiales para indicar la presencia de valores faltantes. Esto permite mantener la integridad de los datos y tener en cuenta la ausencia de información en los análisis posteriores.
+
+
+3.Corrección de errores y valores atípicos: Esta estrategia implica identificar y corregir errores tipográficos, valores inconsistentes o valores atípicos en los datos. Algunas técnicas comunes incluyen:
+
+*Limpieza manual: Revisar los datos cuidadosamente y corregir los errores manualmente. Esto puede ser adecuado para conjuntos de datos pequeños, pero puede ser impracticable para conjuntos de datos grandes.
+
+*Uso de reglas y patrones: Se pueden establecer reglas y patrones predefinidos para identificar errores y valores atípicos. Por ejemplo, se pueden aplicar expresiones regulares para verificar el formato correcto de las direcciones de correo electrónico o los números de teléfono.
+
+*Análisis estadístico: Utilizar métodos estadísticos para identificar valores extremos o atípicos en los datos. Esto puede incluir el uso de técnicas como el rango intercuartil, la desviación estándar o el análisis de valores anómalos.
+
+
+4.Normalización y estandarización de datos: Esta estrategia se utiliza para asegurar que los datos estén en el formato correcto y coherente. Algunas técnicas incluyen:
+
+*Conversión de formatos: Asegurar que los datos estén en el formato adecuado. Por ejemplo, convertir fechas en un formato estándar o estandarizar unidades de medida.
+
+*Codificación de categorías: Si los datos contienen variables categóricas, se pueden codificar en valores numéricos o en variables binarias (variables ficticias) para facilitar su análisis.
+
+
+5.Verificación de la integridad de los datos: Se realizan verificaciones adicionales para garantizar la integridad y coherencia de los datos. Esto puede incluir la verificación de reglas de negocio, la comparación con otras fuentes confiables de datos o la realización de validaciones cruzadas.
+
+----------------------------------------------------------------------
+
+Tratamiento de valores faltantes en la limpieza de datos
+
+1.Eliminación de registros:
+Supongamos que tienes un conjunto de datos que registra las ventas diarias de productos en una tienda. Si algunos registros tienen valores faltantes en la columna "Cantidad Vendida" y esos registros son pocos en comparación con el tamaño total del conjunto de datos, puedes optar por eliminar esos registros. Por ejemplo:
+
+Fecha	Producto	Cantidad Vendida
+2023-06-01	A	10
+2023-06-02	B	
+2023-06-03	C	15
+
+En este caso, si decides eliminar los registros con valores faltantes, el conjunto de datos se vería así:
+
+Fecha	Producto	Cantidad Vendida
+2023-06-01	A	10
+2023-06-03	C	15
+
+codigo: df_cleaned = df.dropna()
+
+
+2.Imputación de valores:
+Supongamos que tienes un conjunto de datos que registra información demográfica de los clientes de una empresa, y algunos registros tienen valores faltantes en la columna "Edad". Puedes utilizar la imputación de valores para estimar o calcular valores para reemplazar los valores faltantes. Por ejemplo, puedes imputar la mediana de las edades existentes en el conjunto de datos en los registros faltantes. Considera el siguiente ejemplo:
+
+ID	Nombre	Edad
+1	Ana	35
+2	Juan	
+3	María	42
+
+Si decides imputar la mediana de las edades existentes, el conjunto de datos se vería así:
+
+ID	Nombre	Edad
+1	Ana	35
+2	Juan	38
+3	María	42
+
+Código:
+median_age = df['Edad'].median()
+df['Edad'].fillna(median_age, inplace=True)
+
+
+3.Marcadores especiales:
+En lugar de reemplazar los valores faltantes, puedes utilizar marcadores especiales para indicar la presencia de valores faltantes. Por ejemplo, puedes reemplazar los valores faltantes con el símbolo "?" o "N/A". Considera el siguiente ejemplo:
+
+ID	Nombre	Edad
+1	Ana	35
+2	Juan	
+3	María	42
+
+Si decides utilizar el símbolo "?" para indicar valores faltantes, el conjunto de datos se vería así:
+
+ID	Nombre	Edad
+1	Ana	35
+2	Juan	?
+3	María	42
+Código:
+
+df['Edad'].fillna('?', inplace=True)
+
+-------------------------------------------------
+
+quiz
+
+1.¿Qué es la limpieza de datos?
+La corrección y eliminación de datos incorrectos, incompletos o irrelevantes
+
+2.¿Cuál de las siguientes estrategias se utiliza para tratar los valores faltantes en un conjunto de datos?
+Reemplazar los valores faltantes con la media de los valores existentes.
+
+3.¿Qué función de pandas se utiliza para convertir variables categóricas en variables dummy?
+get_dummies()
+
+4.¿Cuál de las siguientes afirmaciones es cierta acerca de los quartiles?
+Dividen un conjunto de datos en cuatro partes iguales
+
+5.¿Cuál de las siguientes técnicas se utiliza para estandarizar los datos en un conjunto de datos?
+Normalización de los valores numéricos a un rango específico
+
+6.¿Cuál de las siguientes operaciones de pandas se utiliza para eliminar una columna de un DataFrame?
+drop()
+
+7.¿Cuál es el resultado de aplicar df['Edad'].fillna(df['Edad'].mean(), inplace=True) en un DataFrame de pandas?
+Rellena los valores faltantes de la columna 'Edad' con la media y modifica el DataFrame original
