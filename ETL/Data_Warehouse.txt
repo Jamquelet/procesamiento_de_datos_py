@@ -1,0 +1,42 @@
+Data Warehouse
+
+Un data warehouse es un repositorio centralizado de datos orientado a la toma de decisiones. Es una base de datos diseñada específicamente para almacenar grandes cantidades de datos históricos y actuales de diversas fuentes, con el propósito de facilitar el análisis de datos y la generación de informes.
+
+El data warehouse es uno de los destinos comunes de nuestros datos luego de pasar por un proceso de ETL, se caracteriza por:
+
+1.Orientación a temas: Los datos se organizan en torno a temas específicos, como ventas, clientes, inventario, etc. Esto permite que los usuarios puedan analizar los datos de manera más fácil y centrarse en áreas específicas de interés. (Para esto se usan diseños de estrella o copo de nieve)
+
+2.Integración de datos: El data warehouse integra datos de múltiples fuentes, como sistemas operacionales, bases de datos, archivos, etc. Los datos se extraen, transforman y cargan en el data warehouse utilizando el proceso ETL que mencionamos anteriormente.
+
+3.Almacenamiento histórico: El data warehouse almacena datos históricos a largo plazo, lo que permite el análisis de tendencias y el seguimiento del rendimiento a lo largo del tiempo.
+
+4.Estructura optimizada para el análisis: El diseño del data warehouse está optimizado para consultas y análisis de datos complejos. Utiliza estructuras como dimensiones y tablas de hechos para organizar los datos de manera eficiente.
+
+Las dimensiones y las tablas de hechos son componentes clave de un data warehouse:
+
+1.Dimensiones: Las dimensiones son atributos descriptivos que proporcionan contexto a los datos en una tabla de hechos. Representan las características o aspectos que se utilizan para analizar los datos en diferentes perspectivas. Por ejemplo, en un data warehouse de ventas, las dimensiones pueden ser el tiempo, el producto, el cliente y la ubicación. Cada dimensión tiene una tabla asociada que contiene sus atributos y valores.
+
+2.Tablas de hechos: Las tablas de hechos contienen las medidas numéricas o cuantitativas que se analizan en el data warehouse. Son el núcleo del análisis y generalmente se relacionan con las dimensiones a través de claves primarias y claves foráneas. En un data warehouse de ventas, una tabla de hechos puede contener medidas como la cantidad de productos vendidos, el precio de venta, el descuento aplicado, etc.
+
+Ejemplo
+
+Dimensión: Producto
+id	nombre	categoria
+1	Producto A	Electrónicos
+2	Producto B	Ropa
+3	Producto C	Hogar
+
+Dimensión: Cliente
+id	nombre	email
+1	Cliente A	clienteA@example.com
+2	Cliente B	clienteB@example.com
+3	Cliente C	clienteC@example.com
+
+Tabla de Hechos: Ventas
+id	fecha	producto_id	cliente_id	cantidad	precio
+1	2023-06-01	1	2	5	100
+2	2023-06-02	2	1	2	50
+3	2023-06-03	3	3	3	75
+
+
+Cada fila en la tabla de hechos representa una venta realizada, con información como la fecha, el producto vendido, el cliente y la cantidad y precio de venta.

@@ -1,0 +1,11 @@
+Plotly
+
+Plotly es una biblioteca reciente que se centra en la creación de gráficos interactivos y dinámicos. A diferencia de Matplotlib, Plotly permite generar visualizaciones interactivas, donde los usuarios pueden explorar y manipular los datos directamente en la visualización.
+
+Ofrece una amplia variedad de gráficos, como gráficos de líneas, de dispersión, de barras, de área, de superficie y mucho más. También incluye gráficos especializados, como mapas de calor y gráficos 3D.
+
+Una de las principales características de Plotly es su capacidad para crear gráficos interactivos en forma de objetos trazables y su uso de webgl para acelerar el renderizado mediante hardware.
+
+Se puede instalar usando PIP mediante el comando:
+
+pip install plotly

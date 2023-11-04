@@ -1,0 +1,56 @@
+Matplotlib
+
+Matplotlib es una biblioteca de visualización de datos en Python ampliamente utilizada. Proporciona una amplia variedad de herramientas y funciones para crear gráficos, diagramas y visualizaciones de datos en 2D y 3D.
+
+Con Matplotlib, puedes generar gráficos estáticos, gráficos interactivos, diagramas de dispersión, histogramas, gráficos de barras, gráficos de líneas, gráficos de contorno, gráficos de superficie y muchos otros tipos de visualizaciones. Es extremadamente flexible y personalizable..
+
+Matplotlib se puede utilizar de varias formas. La forma más común es a través de su submódulo pyplot, que proporciona una interfaz similar a la de MATLAB y facilita la creación rápida de gráficos con una sintaxis sencilla. Además de pyplot, Matplotlib también cuenta con otros módulos que permiten un mayor control y personalización, como pylab, artist, axes, entre otros.
+
+Una de las ventajas de Matplotlib es su compatibilidad con NumPy, otra biblioteca de Python utilizada para cálculos numéricos. Matplotlib puede trabajar con matrices de NumPy para generar visualizaciones a partir de datos numéricos de manera eficiente.
+
+Además, Matplotlib es una biblioteca de código abierto y cuenta con una amplia documentación y una gran comunidad de usuarios. Esto significa que puedes encontrar muchos ejemplos, tutoriales y recursos en línea para ayudarte a aprender y utilizar la biblioteca.
+
+Puedes instalar la librería ejecutando:
+
+python pip install matplotlib
+
+-----------------------------------------------------
+
+quiz 1
+
+1.¿Qué es Matplotlib?
+Una biblioteca de visualización de datos en Python
+
+2.¿Qué es un gráfico de dispersión?
+Un gráfico que muestra la relación entre dos variables numéricas
+
+3.¿Cuál de las siguientes opciones es un marcador válido en Matplotlib?
+"o"
+
+4.¿Cuál es la diferencia entre un gráfico de dispersión y un gráfico de líneas?
+Un gráfico de dispersión muestra la relación entre dos variables numéricas, mientras que un gráfico de líneas muestra la distribución de una variable numérica en función de otra variable numérica.
+
+5.¿Cómo se agrega una leyenda a un gráfico en Matplotlib?
+Llamando a la función legend()
+
+------------------------------------------------------
+
+quiz 2
+
+1.¿Para qué se utiliza la función plt.plot() en Matplotlib?
+Para crear un gráfico de líneas
+
+2.¿Qué es un boxplot y para qué se utiliza?
+Un gráfico que muestra la distribución de un conjunto de datos numéricos.
+
+3.¿Cómo se define el rango de los bigotes en un boxplot?
+Se extienden hasta el valor mínimo y máximo dentro de 1.5 veces el rango intercuartil.
+
+4.¿Qué es un subplot en Matplotlib?
+Un gráfico con múltiples subfiguras que se muestran juntas.
+
+5.¿Cómo se aplica el estilo "fivethirtyeight" en Matplotlib?
+Usando la función plt.style.use('fivethirtyeight')
+
+6.¿Cuál es la función para mostrar un gráfico en Matplotlib?
+plt.show()

@@ -1,0 +1,36 @@
+¿Qué es ETL?
+
+ETL es un acrónimo que significa Extract, Transform, Load (Extraer, Transformar, Cargar). Es un proceso utilizado en la gestión y preparación de datos para el análisis. Aquí te explico cada una de las etapas del proceso:
+
+1.Extracción (Extract): En esta etapa, los datos se extraen de diversas fuentes de origen, como bases de datos, archivos CSV, hojas de cálculo, API web, entre otros. El objetivo es recopilar los datos necesarios para el análisis y asegurarse de que se obtengan de manera estructurada.
+
+2.Transformación (Transform): En esta etapa, los datos extraídos se someten a una serie de transformaciones para prepararlos y limpiarlos antes de su análisis. Las transformaciones pueden incluir la eliminación de datos duplicados, el filtrado de registros innecesarios, la corrección de errores, el enriquecimiento de datos mediante la combinación de múltiples fuentes, la normalización de formatos, entre otros procesos. El objetivo es garantizar que los datos estén coherentes, completos y listos para el análisis.
+
+3.Carga (Load): En esta etapa final, los datos transformados se cargan en un destino específico, como un data warehouse, una base de datos relacional o un sistema de análisis. Los datos se organizan y estructuran de manera que sean accesibles y utilizables para el análisis posterior. La carga también puede incluir la creación de tablas, esquemas y relaciones necesarios para el análisis de datos.
+
+
+La aplicación de ETL en el análisis de datos es fundamental para garantizar la calidad y la integridad de los datos utilizados en el proceso de toma de decisiones. Algunas de las principales aplicaciones del ETL en el análisis de datos son:
+
+1.Integración de datos: El ETL permite combinar datos provenientes de múltiples fuentes en una única fuente consolidada para un análisis más completo. Por ejemplo, puedes combinar datos de ventas, datos de inventario y datos demográficos para obtener una visión holística del rendimiento de un producto o servicio.
+
+2.Limpieza de datos: El proceso de transformación del ETL incluye la limpieza y normalización de los datos, lo que implica eliminar valores nulos, corregir errores y estandarizar formatos. Esto asegura que los datos utilizados en el análisis sean precisos y consistentes.
+
+3.Preparación de datos para análisis: El ETL se utiliza para estructurar y organizar los datos de manera que sean aptos para el análisis. Esto puede incluir la creación de tablas dimensionales, tablas de hechos y esquemas de datos específicos para los fines de análisis deseados.
+
+4.Actualización de datos: El ETL también se utiliza para mantener actualizados los datos utilizados en el análisis. Mediante la programación de tareas de extracción, transformación y carga periódicas, se pueden actualizar automáticamente los datos con información reciente, lo que permite un análisis en tiempo real o análisis históricos actualizados.
+
+----------------------------------------------------------------
+
+quiz
+
+1.¿Cuál es el objetivo principal de ETL (Extract, Transform, Load)?
+Preparar y transformar los datos para su carga en un data warehouse
+
+2.¿Cuál es la función principal de un data warehouse?
+Almacenar grandes cantidades de datos históricos
+
+3.¿Cuál es el propósito de las dimensiones en un data warehouse?
+Proporcionar contexto descriptivo para el análisis de datos
+
+4.¿Qué representa la tabla de hechos en un data warehouse?
+Las medidas numéricas o cuantitativas que se analizan
