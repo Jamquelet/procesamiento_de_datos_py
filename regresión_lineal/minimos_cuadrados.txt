@@ -1,0 +1,333 @@
+Minimos Cuadrados
+
+Existen dos maneras de ver la fórmula de la regresión lineal
+
+1.De forma escalar, asumimos que tenemos un conjunto de datos que consiste en pares ordenados 
+(x,y), donde x es la variable independiente y y es la variable dependiente que queremos predecir. Nuestro objetivo es encontrar la mejor línea recta que se ajuste a los datos.
+
+Sea la ecuación de la línea recta:
+
+y=mx+b
+
+Para cada par ordenado (x,y), el residuo se calcula como:
+e=y−(mx+b)
+
+Nuestro objetivo es encontrar los valores de 
+m y b que minimicen la siguiente función de error:
+E(m,b)= i=1∑n  [(yi  −(mxi  +b)) 2 ]
+
+Donde ∑ representa la suma sobre todos los n pares ordenados (x i ,y i ) en nuestros datos.
+
+Para minimizar la función de error, tomamos las derivadas parciales con respecto a m y b, y las igualamos a cero:
+�
+−
+(
+�
+�
+�
++
+�
+)
+)
+=
+0
+∂
+�
+∂
+�
+=
+−
+2
+∑
+�
+=
+1
+�
+(
+�
+�
+−
+(
+�
+�
+�
++
+�
+)
+)
+=
+0
+∂m
+∂E
+​
+ 
+∂b
+∂E
+​
+ 
+​
+  
+=−2 
+i=1
+∑
+n
+​
+ x 
+i
+​
+ (y 
+i
+​
+ −(mx 
+i
+​
+ +b))=0
+=−2 
+i=1
+∑
+n
+​
+ (y 
+i
+​
+ −(mx 
+i
+​
+ +b))=0
+​
+ 
+Resolviendo estas ecuaciones, obtenemos las siguientes fórmulas para calcular los valores óptimos de m y b:
+
+�
+=
+∑
+�
+=
+1
+�
+�
+�
+�
+�
+−
+∑
+�
+=
+1
+�
+�
+�
+∑
+�
+=
+1
+�
+�
+�
+∑
+�
+=
+1
+�
+�
+�
+2
+−
+(
+∑
+�
+=
+1
+�
+�
+�
+)
+2
+�
+=
+∑
+�
+=
+1
+�
+�
+�
+−
+�
+∑
+�
+=
+1
+�
+�
+�
+�
+m
+b
+​
+  
+= 
+∑ 
+i=1
+n
+​
+ x 
+i
+2
+​
+ −(∑ 
+i=1
+n
+​
+ x 
+i
+​
+ ) 
+2
+ 
+∑ 
+i=1
+n
+​
+ x 
+i
+​
+ y 
+i
+​
+ −∑ 
+i=1
+n
+​
+ x 
+i
+​
+ ∑ 
+i=1
+n
+​
+ y 
+i
+​
+ 
+​
+ 
+= 
+n
+∑ 
+i=1
+n
+​
+ y 
+i
+​
+ −m∑ 
+i=1
+n
+​
+ x 
+i
+​
+ 
+​
+ 
+​
+ 
+Una vez que tenemos los valores óptimos de 
+�
+m y 
+�
+b, podemos utilizar la ecuación de la línea recta para hacer predicciones sobre nuevos valores de 
+�
+x.
+
+La regresión lineal también se puede expresar de forma matricial, lo que proporciona una forma más compacta de calcular los coeficientes de la regresión.
+
+Consideremos una matriz 
+�
+X de tamaño 
+�
+×
+(
+�
++
+1
+)
+n×(p+1), donde cada fila representa un punto de datos y las columnas corresponden a las variables independientes (incluyendo una columna de unos para el término de intersección). También tenemos un vector y de tamaño 
+�
+×
+1
+n×1, que contiene los valores de la variable dependiente.
+
+La ecuación de la regresión lineal matricial se puede representar como:
+
+�
+=
+�
+�
++
+�
+y=Xβ+ε
+Donde:
+
+�
+y es el vector de valores de la variable dependiente.
+�
+X es la matriz de variables independientes.
+�
+β es el vector de coeficientes de regresión que queremos encontrar.
+�
+ε es el vector de errores.
+El objetivo es encontrar el vector de coeficientes de regresión 
+�
+β que minimice la suma de los cuadrados de los errores. Esto se puede lograr utilizando el método de los mínimos cuadrados.
+
+La solución matricial para 
+�
+β se puede calcular de la siguiente manera:
+
+�
+=
+(
+�
+�
+�
+)
+−
+1
+�
+�
+�
+β=(X 
+T
+ X) 
+−
+ 1X 
+T
+ y
+Donde:
+
+�
+�
+X 
+T
+  es la matriz transpuesta de X.
+(
+�
+�
+�
+)
+−
+1
+(X 
+T
+ X) 
+−
+ 1 es la inversa de la matriz producto de 
+�
+�
+X 
+T
+  y 
+�
+X.

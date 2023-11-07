@@ -1,0 +1,86 @@
+La regresión lineal es un método estadístico utilizado para modelar la relación entre una variable dependiente y una o más variables independientes. Se utiliza principalmente para predecir el valor de la variable dependiente en función de los valores conocidos de las variables independientes.
+
+En la regresión lineal, se asume que existe una relación lineal aproximada entre las variables. Esto implica que los cambios en la variable dependiente están linealmente relacionados con los cambios en las variables independientes. El objetivo de la regresión lineal es encontrar la mejor línea recta que se ajuste a los datos observados de manera óptima.
+
+
+La forma más común de regresión lineal es la regresión lineal simple, donde se tiene una única variable independiente. La ecuación de la regresión lineal simple se puede representar de la siguiente manera:
+
+y=mx+b
+
+Donde:
+
+-y es la variable dependiente que queremos predecir.
+
+-x es la variable independiente.
+
+-m es la pendiente de la línea, que representa la relación entre 
+x e y.
+
+-b es el término de intersección o el punto en el que la línea de regresión intersecta el eje y.
+
+El objetivo es encontrar los valores óptimos para m y b que minimicen la diferencia entre los valores observados y los valores predichos por el modelo. Esto se logra utilizando métodos como el método de los mínimos cuadrados, que busca minimizar la suma de los cuadrados de las diferencias entre los valores observados y los valores predichos.
+
+https://www.youtube.com/watch?v=kqS1iprWCNg
+-----------------------------------------------------
+
+Mínimos cuadrados (Historia)
+
+El método de los mínimos cuadrados fue desarrollado por el matemático y astrónomo francés Adrien-Marie Legendre en el siglo XVIII y posteriormente extendido por el matemático y estadístico alemán Carl Friedrich Gauss en el siglo XIX.
+
+La historia detrás del descubrimiento del método de mínimos cuadrados se relaciona con la astronomía y la predicción de órbitas planetarias. En ese tiempo, los astrónomos recopilaban observaciones detalladas de las posiciones de los planetas en el cielo, pero se dieron cuenta de que las mediciones tenían cierto grado de error. Esto dificultaba la tarea de predecir con precisión las órbitas y el movimiento de los planetas.
+
+Legendre se enfrentó a este problema y propuso un enfoque novedoso. En lugar de tratar de ajustar los datos observados exactamente, propuso encontrar la mejor solución aproximada que minimizara los errores de las mediciones. Su idea central fue minimizar la suma de los cuadrados de las diferencias entre los valores observados y los valores predichos por el modelo.
+
+Legendre publicó su método de los mínimos cuadrados en 1805 en su obra "Nouvelles méthodes pour la détermination des orbites des comètes". Sin embargo, Gauss también había estado trabajando en el mismo problema de ajustar curvas a datos observados y había desarrollado un método similar de forma independiente.
+
+En 1809, Gauss publicó su trabajo "Theoria Motus Corporum Coelestium" en el que presentaba el método de mínimos cuadrados y su aplicación en la predicción de órbitas planetarias. Gauss fue más allá al proporcionar fundamentos teóricos sólidos y una justificación matemática para el método.
+
+Aunque ambos científicos contribuyeron significativamente al desarrollo del método de mínimos cuadrados, Gauss recibió más reconocimiento debido a su enfoque más riguroso y completo. Desde entonces, el método de los mínimos cuadrados se ha convertido en un pilar fundamental de la estadística y se aplica en una amplia gama de disciplinas científicas y de investigación.
+
+
+El método
+
+El objetivo principal era encontrar una función matemática que describiera con precisión la trayectoria de un cuerpo celeste, como un planeta, a partir de las observaciones astronómicas. En este caso, nos enfocaremos en el ajuste de órbitas elípticas.
+
+Para simplificar la explicación, supongamos que tenemos observaciones del ángulo de posición de un planeta en diferentes momentos. Estos ángulos de posición pueden estar sujetos a ciertos errores debido a imprecisiones en las mediciones o perturbaciones en la órbita real del planeta.
+
+El primer paso en el método de los mínimos cuadrados es asumir una función matemática que describa la forma de la órbita elíptica. Una forma común de representar una elipse es mediante la siguiente ecuación:
+
+r= a(1−ε°2)/1+εcosθ
+http://www.web.uvic.ca/~rdesousa/teaching/P321A/L16_321A.pdf
+
+Donde:
+-r es la distancia desde el centro de la elipse al punto en la órbita.
+-a es el semieje mayor de la elipse.
+-ε es la excentricidad de la elipse.
+-θ es el ángulo que mide la posición del planeta a lo largo de su órbita.
+
+Nuestro objetivo es encontrar los valores óptimos para los parámetros 
+�
+a y 
+�
+ε que mejor se ajusten a los datos observados. Esto se logra minimizando la suma de los cuadrados de las diferencias entre los valores observados y los valores predichos por la función de la elipse.
+
+Entonces, el siguiente paso es calcular las diferencias entre los valores observados y los valores predichos por la función de la elipse. Estas diferencias se conocen como residuos o errores. Matemáticamente, se puede expresar como:
+
+e=yobs − ypred
+​
+Donde:
+
+-e es el residuo.
+-yobs  es el valor observado del ángulo de posición (también denotado por y).
+-ypred  es el valor predicho por la función de la elipse (también denotado por ^y^ ).
+
+
+Una vez que tenemos los residuos, aplicamos el método de los mínimos cuadrados para minimizar la suma de los cuadrados de estos residuos. Esto implica encontrar los valores de 
+a y ε que hacen que la suma de los residuos al cuadrado sea lo más pequeña posible.
+
+Utilizando técnicas de cálculo diferencial, podemos derivar una función de error en términos de 
+a y ε y establecer las derivadas parciales igual a cero para encontrar los valores óptimos.
+
+Una vez que se encuentran los valores óptimos de a y ε, podemos obtener la función de la elipse ajustada que describe con mayor precisión la órbita del planeta.
+http://adams.dm.unipi.it/~gronchi/PDF/gronchi_unesco.pdf
+
+
+
+​

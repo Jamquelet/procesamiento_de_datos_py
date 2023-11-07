@@ -1,0 +1,13 @@
+Sklearn, también conocido como scikit-learn, es una biblioteca de aprendizaje automático (machine learning) en Python ampliamente utilizada y de código abierto. Proporciona una amplia gama de algoritmos y herramientas para realizar tareas relacionadas con el aprendizaje automático, como clasificación, regresión, agrupamiento, selección de características, preprocesamiento de datos y evaluación de modelos.
+
+Sklearn se basa en otras bibliotecas populares de Python, como NumPy, SciPy y matplotlib, y está diseñado para ser fácil de usar, eficiente y extensible. Proporciona una interfaz consistente y coherente.
+
+Las principales características y ventajas de sklearn son:
+
+1.Variedad de algoritmos: Sklearn ofrece una amplia gama de algoritmos de aprendizaje automático, incluyendo algoritmos de clasificación (como regresión logística, árboles de decisión, máquinas de vectores de soporte), algoritmos de regresión (como regresión lineal, regresión polinómica), algoritmos de agrupamiento (como k-means, DBSCAN), algoritmos de reducción de dimensionalidad, y muchos más. Además, también proporciona herramientas para la selección de modelos y la validación cruzada.
+
+2.Preprocesamiento de datos: Sklearn ofrece una amplia gama de herramientas para el preprocesamiento de datos, incluyendo la limpieza de datos faltantes, la normalización de características, la codificación de variables categóricas y el escalado de características.
+
+3.Evaluación de modelos: Sklearn proporciona herramientas para evaluar el rendimiento de los modelos de aprendizaje automático. Incluye métricas de evaluación comunes, como precisión, recall, F1-score, así como métricas específicas de regresión. Además, también ofrece funciones para realizar validación cruzada y ajuste de hiperparámetros.
+
+4.Integración con otras bibliotecas: Sklearn se integra de manera fluida con otras bibliotecas populares de Python utilizadas en el ámbito del aprendizaje automático, como NumPy y SciPy. Esto permite combinar fácilmente las capacidades de estas bibliotecas para tareas más complejas de análisis de datos y modelado.

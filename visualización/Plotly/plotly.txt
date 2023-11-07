@@ -9,3 +9,26 @@ Una de las principales características de Plotly es su capacidad para crear gr�
 Se puede instalar usando PIP mediante el comando:
 
 pip install plotly
+
+
+---------------------------------------------------------
+
+quiz
+
+1.¿Cuál de las siguientes bibliotecas se utiliza para crear visualizaciones interactivas en Python?
+Plotly
+
+2.¿Qué tipo de gráfica es más adecuada para representar datos (sin tendencia) en un espacio tridimensional?
+Gráfica de dispersión
+
+3.¿Qué tipo de gráfica se utiliza para representar la distribución de un conjunto de datos numéricos, mostrando los valores mínimos, máximos, medianas y cuartiles?
+Gráfica de cajas
+
+4.¿Cuál de las siguientes afirmaciones es verdadera acerca de una gráfica de contorno?
+Utiliza curvas y colores o sombreado para indicar el valor de la variable dependiente
+
+5.¿Cuál es la biblioteca utilizada en Python para crear gráficas interactivas utilizando la interfaz de graph_objects?
+Plotly
+
+6.¿Cuál es la forma adecuada de crear una gráfica de superficie utilizando la interfaz de graph_objects de Plotly?
+Utilizando el método go.Surface
