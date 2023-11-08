@@ -82,5 +82,24 @@ Una vez que se encuentran los valores óptimos de a y ε, podemos obtener la fun
 http://adams.dm.unipi.it/~gronchi/PDF/gronchi_unesco.pdf
 
 
+------------------------------------------
 
-​
+quiz
+
+1.¿Cuál es el objetivo principal de la regresión lineal?
+Predecir una variable continua
+
+2.¿Cuál es la técnica utilizada para ajustar una regresión lineal a los datos?
+​Método de los mínimos cuadrados
+
+3.¿Cuál es la fórmula de la línea de regresión lineal simple?
+y= mx + b
+
+4.¿Qué biblioteca de Python se utiliza comúnmente para ajustar una regresión lineal?
+scikit-learn ( sklearn)
+
+5.¿Qué métrica se utiliza comúnmente para evaluar el rendimiento de una regresión lineal?
+Error cuadrático medio (MSE)
+
+6.¿Cuál es el propósito de realizar predicciones en una regresión lineal?
+Estimar valores de la variable dependiente para nuevas instancias

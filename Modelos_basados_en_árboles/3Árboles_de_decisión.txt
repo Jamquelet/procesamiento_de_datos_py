@@ -1,0 +1,41 @@
+Árboles de decisión
+
+Un árbol de decisión es un algoritmo de aprendizaje automático que se utiliza tanto para problemas de clasificación como de regresión. En el contexto de la clasificación, un árbol de decisión es una estructura jerárquica compuesta por nodos que representan decisiones y ramas que representan posibles resultados o consecuencias de esas decisiones.
+
+El algoritmo de construcción de un árbol de decisión comienza con el nodo raíz que contiene todos los ejemplos de entrenamiento. Luego, en cada paso, se evalúan diferentes características y se calcula una medida de impureza, se selecciona la característica que produce la mayor reducción de impureza, lo que significa que produce particiones más puras. Este proceso continúa recursivamente para cada subnodo hasta que se cumpla alguna condición de parada.
+
+Detallando más el proceso
+
+1.Calcular la medida de impureza: Antes de realizar el split, se calcula una medida de impureza en el nodo actual. Las medidas comunes de impureza incluyen la impureza Gini, la entropía y el índice de ganancia de información. Estas medidas evalúan qué tan mezcladas están las clases en el nodo y ayudan a determinar qué split es el más beneficioso.
+
+2.Evaluar todas las características: Se evalúan todas las características o atributos disponibles en el conjunto de datos para determinar cuál proporciona la mejor división. Esto implica calcular la medida de impureza para cada posible split en cada característica.
+
+3.Seleccionar la mejor característica: Se elige la característica que proporciona la mayor reducción en la impureza o la mayor ganancia de información. La idea es seleccionar la característica que, al realizar el split, separa mejor las clases o reduce la incertidumbre en los datos.
+
+4.Definir el criterio de división: Una vez seleccionada la mejor característica, se establece un criterio de división basado en un umbral o regla. Por ejemplo, si la característica seleccionada es la longitud del pétalo, el criterio de división podría ser "longitud del pétalo mayor que X". Los ejemplos con valores que cumplen el criterio se asignan a una rama y los ejemplos que no cumplen el criterio se asignan a otra rama.
+
+5.Crear nodos hijos: Se crean nodos hijos correspondientes a cada rama del criterio de división. Estos nodos hijos se convierten en nuevos nodos internos en el árbol de decisión y se consideran en los pasos posteriores del proceso de construcción del árbol.
+
+6.Repetir el proceso: El proceso se repite recursivamente en cada nodo hijo creado, es decir, se evalúan las características disponibles en cada nodo hijo y se selecciona la mejor característica para realizar nuevos splits. Este proceso continúa hasta que se cumplan ciertas condiciones de parada, como alcanzar una profundidad máxima, tener un número mínimo de ejemplos en los nodos o alcanzar un criterio de impureza deseado.
+
+
+Gini
+
+Cuando se utiliza la impureza Gini como criterio de selección en un árbol de decisión para clasificación, el objetivo es minimizar la impureza de los nodos y, en última instancia, obtener una partición óptima de los datos en diferentes clases.
+
+La impureza Gini es una medida de cuánto se mezclan las clases en un nodo determinado. Cuanto menor sea la impureza Gini, más puro o homogéneo será el nodo, es decir, contendrá principalmente ejemplos de una sola clase. La fórmula de la impureza Gini se calcula de la siguiente manera:
+
+Gini(p)=1− i=1∑C p i2
+
+Donde:
+
+�
+p es un vector que contiene las proporciones de cada clase en el nodo.
+�
+C es el número de clases.
+Una vez construido el árbol de decisión, se puede utilizar para hacer predicciones sobre nuevos ejemplos. Los ejemplos se propagan a través del árbol siguiendo las decisiones tomadas en cada nodo, hasta llegar a una hoja que representa una clase final. La clase asignada a ese ejemplo será la clase mayoritaria en la hoja correspondiente.
+
+La ventaja de utilizar la impureza Gini como criterio en un árbol de decisión es que es computacionalmente eficiente y puede manejar eficazmente conjuntos de datos grandes.
+
+Los árboles de decisión tienen la capacidad de capturar relaciones no lineales y son interpretables, ya que se pueden visualizar y comprender fácilmente.
+​

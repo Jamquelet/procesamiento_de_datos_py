@@ -1,0 +1,78 @@
+La clasificación de datos es un problema fundamental en el campo del aprendizaje automático y se utiliza para categorizar datos en diferentes clases o categorías predefinidas. El objetivo es entrenar un modelo o algoritmo que pueda aprender a asignar nuevas instancias de datos a las clases correctas basándose en ejemplos previos.
+
+Similar a la tarea de regresión, esto implica dos pasos principales: entrenamiento y predicción. Durante la fase de entrenamiento, se proporciona al algoritmo un conjunto de datos de entrenamiento que consta de ejemplos etiquetados. Cada ejemplo está compuesto por características o atributos y una etiqueta de clase asociada. El modelo analiza estos ejemplos para identificar patrones y características distintivas que ayuden a distinguir las diferentes clases.
+
+Una vez que el modelo ha sido entrenado, se puede utilizar para hacer predicciones sobre nuevos datos no etiquetados.
+
+Existen varios algoritmos y enfoques para realizar la clasificación de datos, como los árboles de decisión, las máquinas de vectores de soporte (SVM), el clasificador de vecinos más cercanos (K-NN), las redes neuronales, entre otros. Cada algoritmo tiene sus propias fortalezas y debilidades, y la elección del algoritmo depende del problema específico y los datos disponibles.
+
+Nótese que la calidad de los datos de entrenamiento es fundamental para obtener un modelo preciso. Si los ejemplos de entrenamiento son representativos y están correctamente etiquetados, es más probable que el modelo clasifique con precisión los nuevos datos.
+
+
+
+
+Separación lineal vs no lineal
+
+La separación lineal implica que los datos pueden ser separados o divididos por una línea recta o un hiperplano en un espacio de características. Esto significa que existe una frontera de decisión lineal que puede separar claramente las diferentes clases de datos. Un ejemplo común es el clasificador de regresión logística.
+
+Sin embargo, en muchos casos, los datos no pueden ser separados de manera efectiva por una línea recta o un hiperplano en el espacio de características. En tales situaciones, se requiere una separación no lineal. Un algoritmo de separación no lineal es capaz de encontrar fronteras de decisión más complejas, como curvas o regiones no lineales, para clasificar los datos de manera más precisa.
+
+Para lograr una separación no lineal, se utilizan algoritmos y modelos más complejos, como las máquinas de vectores de soporte (SVM) con un núcleo no lineal, los árboles de decisión o los clasificadores basados en redes neuronales.
+
+Estos algoritmos no lineales son capaces de aprender fronteras de decisión más complejas, esto es especialmente útil cuando los datos tienen relaciones no lineales intrínsecas o cuando las características no pueden ser bien representadas por una función lineal.
+
+--------------------------------------
+
+quiz
+
+1.¿Qué es clasificación en el aprendizaje automático?
+Es el proceso de asignar una etiqueta o clase a una instancia basada en sus características
+
+2.¿Cuál es la diferencia entre separación lineal y no lineal?
+La separación lineal utiliza una línea recta para separar las clases, mientras que la separación no lineal utiliza una curva o superficie compleja
+
+3.¿Qué es el dataset de Iris?
+Un conjunto de datos que contiene información sobre diferentes especies de flores Iris
+
+4.¿Qué son los árboles de decisión?
+Son algoritmos que utilizan reglas condicionales apra tomar decisiones y contruir modelos de clasificación o regresión
+
+5.¿Qué es un boundary plot (gráfico de límites) en el contexto de los árboles de decisión?
+Es un gráfico que muestra los límites de decisión o separación entre las diferentes clases en un conjunto de datos
+
+6.¿Cómo se grafican los árboles de decisión en sklearn?
+Utilizando la función plot_tree ( ) de la biblioteca sklearn.tree.
+
+7.¿Qué es el sobreajuste (overfitting) en los modelos de aprendizaje automático?
+Es cuando un modelo se ajusta perfectamente a los datos de entrenamiento pero no generaliza bien a nuevos datos
+
+8.¿Qué es la validación cruzada?
+Es una técnica para evaluar el rendimiento de un modelo utilizando múltiples divisiones de los datos en un conjunto de entrenamiento y prueba
+
+------------------------------------------------
+
+quiz2
+
+1.¿Qué es el bagging?
+Es una tecnica de ensamblaje de modelos que combina multiples modelos debiles en uno mas fuerte
+
+2.¿Qué es un Random Forest?
+es un algoritmo que combina multiples arboles de decision para realizar clasificacion o regresion
+
+3.¿Cuáles son algunas métricas comunes utilizadas para evaluar modelos de clasificación?
+Precision, recall,F1-score
+
+4.¿Cuál es una limitación del accuracy (exactitud) como métrica de evaluación en problemas de clasificación?
+No considera la distribucion de las clases en los datos
+
+5.¿Qué es una matriz de confusión en el contexto de la clasificación?
+Es una tabla que muestra las diferentes combinaciones de predicciones y etiquetas reales en un problema de clasificacion
+
+6.¿Qué es la precisión (precision) en el contexto de la clasificación binaria?
+Es la proporcion de verdaderos positivos(TP)sobre la suma de verdaderos positivos y falsos negativos(fP)
+
+7.¿Qué es el recall en el contexto de la clasificación binaria?
+Es la proporcion de verdaderos positivos(TP) sobre la suma de verdaderos positivos y falsos negativos(FN)
+
+8.¿Qué es el F1-score en el contexto de la clasificación binaria?
+Es la media aritmetica de la precision y el recall
